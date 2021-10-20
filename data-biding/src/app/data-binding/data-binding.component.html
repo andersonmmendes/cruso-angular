@@ -1,0 +1,63 @@
+<!-- <section> -->
+  <!-- <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{ urlImagem }}" >
+    <img [src]="urlImagem">
+  </article> -->
+
+  <!-- <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="success">Success</option>
+        <option value="info">Info</option>
+        <option value="warning">Alerta</option>
+        <option value="danger">Erro</option>
+      </select>
+      <br><br>
+
+      <alert [type]="classe.value">
+        <strong>{{classe.value}}</strong>
+      </alert>
+
+      <alert type="danger" [style.display]="classe.value == 'danger' ? 'block' : 'none'">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </alert>
+    </div>
+  </article>
+</section> -->
+
+<section class="event-binding">
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="botaoClicado()" class="btn btn-primary">Me clique!</button>
+      <br><br>
+      <input type="text" (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor($any(campoInput).value)"
+        (blur)="salvarValor($any(campoInput).value)" 
+        #campoInput
+      />
+      <p>Valor Atual: {{ valorAtual }}</p>
+      <p>Valor salvo: {{ valorSalvo }}</p>
+
+      <br>
+      <span 
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        [class.highlight]="isMouseOver"
+      >
+      Passe o mouse sobre mim</span>
+    </div>
+  </article>
+
+</section>
