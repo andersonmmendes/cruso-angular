@@ -10,7 +10,7 @@
       ],
       "parserOptions": {
         "project": [
-          "tsconfig.json"
+          "diretivas/tsconfig.json"
         ],
         "createDefaultProgram": true
       },
