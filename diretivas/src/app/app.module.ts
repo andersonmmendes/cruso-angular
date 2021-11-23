@@ -12,6 +12,7 @@ import { OperadorElvisComponent } from './operador-elvis/operador-elvis.componen
 import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustonizadasComponent } from './diretivas-custonizadas/diretivas-custonizadas.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DiretivasCustonizadasComponent } from './diretivas-custonizadas/diretiv
     OperadorElvisComponent,
     ExemploNgContentComponent,
     FundoAmareloDirective,
-    DiretivasCustonizadasComponent
+    DiretivasCustonizadasComponent,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
