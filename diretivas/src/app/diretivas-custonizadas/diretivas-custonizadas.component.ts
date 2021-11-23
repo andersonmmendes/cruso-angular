@@ -7,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasCustonizadasComponent implements OnInit {
 
+  mostrarCursos: boolean = false;
+
   constructor() { }
 
   // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit(): void {
+  }
+
+  
+  onMostrarCursos() {
+    this.mostrarCursos = !this.mostrarCursos;
   }
 
 }
